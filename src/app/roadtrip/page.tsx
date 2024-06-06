@@ -74,7 +74,7 @@ export default function Home() {
             <div className={styles.container}>
                 {userId && (
                     <div className={styles.header}>
-                        <Button text="Créer une étape" handleClick={() => router.push(`/roadtrip/create`)} color="primary"/>
+                        <Button text="Créer un road trip" handleClick={() => router.push(`/roadtrip/create`)} color="primary"/>
                     </div>
                 )}
                 {userId && (
