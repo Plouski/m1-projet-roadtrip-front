@@ -1,0 +1,37 @@
+.wrapper {
+    margin-bottom: 20px;
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 1em;
+        font-weight: 100;
+        line-height: 1.5;
+        color: black;
+        background-color: #f8f9fa;
+        border: 1px solid #ced4da;
+        border-radius: 6px;
+
+        &:hover {
+            border-color: #d70000;
+        }
+
+        &:focus {
+            border-color: #d70000;
+            outline: 0;
+        }
+    }
+
+    .fileName {
+        margin-top: 0.5em;
+        font-size: 0.9em;
+        color: #555;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper input,
+    .wrapper textarea {
+        padding: 0.9em;
+    }
+}

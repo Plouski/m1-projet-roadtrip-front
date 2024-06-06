@@ -1,0 +1,10 @@
+.wrapper {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 18px;
+    color: white;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}

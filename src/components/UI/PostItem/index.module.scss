@@ -1,0 +1,44 @@
+.item {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+
+  .wishlist {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin-left: auto;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      stroke: #333;
+      stroke-width: 1.5;
+    }
+
+    &.active {
+      transform: scale(1.2);
+      color: red;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .content {
+    flex: 1;
+  }
+}

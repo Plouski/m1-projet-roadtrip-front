@@ -1,0 +1,13 @@
+.wrapper {
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        font-size: 40px;
+    }
+}

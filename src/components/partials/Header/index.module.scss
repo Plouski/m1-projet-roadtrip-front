@@ -1,0 +1,107 @@
+.nav {
+  background-color: white; 
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 20px; 
+  transition: all 0.3s ease;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+
+  .navContainer {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .leftContainer {
+    flex: 1;
+  }
+
+  .rightContainer {
+    display: flex;
+    align-items: center;
+  }
+
+.authLinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.profileContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profileIcon {
+    cursor: pointer;
+}
+
+.loggedOut {
+  color: red;
+}
+
+.loggedIn {
+  color: black;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.navLink {
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+  .logoLink {
+    text-decoration: none;
+  }
+
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+
+  .navLink {
+    text-decoration: none;
+    color: #333333;
+    margin-right: 20px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    padding: 10px 10px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    padding: 10px 5px;
+  }
+
+}

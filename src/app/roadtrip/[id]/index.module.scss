@@ -1,0 +1,77 @@
+.container {   
+    height: 100vh;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('/roadtrip.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.wishlist {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin-left: auto; 
+
+    svg {
+      width: 24px;
+      height: 24px;
+      stroke: #333;
+      stroke-width: 1.5;
+    }
+
+    &.active {
+      transform: scale(1.2);
+      color: red;
+    }
+  }
+
+.image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.buttonCreate{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+}
+
+.steps {
+    list-style: none;
+    padding: 0;
+}
+
+.step {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.stepButton {
+    display: flex;
+    gap: 10px;
+}
